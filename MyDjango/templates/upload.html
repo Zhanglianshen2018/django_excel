@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>上传文件</title>
+</head>
+<body>
+    <div>
+        <form method="post" action="/deal_excel/"  enctype="multipart/form-data">
+            {% csrf_token %}
+            <label >上传文件:</label><br>
+            <input type="file" name="myfiles" multiple="multiple">
+            {{ forms }}<br>
+            <input type="submit" value="upload">
+        </form>
+    </div>
+
+
+
+
+</body>
+</html>
